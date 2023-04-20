@@ -40,7 +40,7 @@
 				<workerType>Micro</workerType>
 				<applicationName>secretmapp</applicationName>
 				<password>Ntantukava150819</password>
-				<muleVersion>7.14.0</muleVersion>
+				<muleVersion>4.0.0</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
 				
