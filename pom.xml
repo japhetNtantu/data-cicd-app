@@ -35,6 +35,7 @@
 				<cloudHubDeployment>
 				<username>japhetntantu4</username>
 				<environment>Sandbox</environment>
+				<objectStoreV2>true</objectStoreV2>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>secretmapp</applicationName>
