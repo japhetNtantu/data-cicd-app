@@ -7,6 +7,8 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
+
+
 	<name>secretmapp</name>
 
 	<properties>
@@ -29,6 +31,19 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+
+				<configuration>
+				<cloudHubDeployment>
+				<username>japhetntantu3</username>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>secretmapp</applicationName>
+				<password>Ntantukava150819</password>
+				<muleVersion>7.14.0</muleVersion>
+				</cloudHubDeployment>
+				</configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
