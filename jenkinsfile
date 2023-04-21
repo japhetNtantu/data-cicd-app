@@ -8,9 +8,9 @@ pipeline
                 // 
             }
         }
-        stage('CheckOut') { 
+        stage('Unit Test') { 
             steps {
-            bat ''
+            bat 'mvn clean test'
                 // 
             }
         }
