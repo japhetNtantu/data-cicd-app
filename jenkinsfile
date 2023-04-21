@@ -16,9 +16,9 @@ pipeline
         }
         stage('Deploy Application To Mulesoft cloudhub') { 
             steps {
-            bat 'mvn package deploy -DmuleDeploy -Denv=Sandbox -Dworkers=1 -DvCore=Micro -Dappname=Mapp-application -Dbusiness=Cap4Lab -Danypoint.username=japhetntantu4 -Danypoint.password=Ntantukava150819 -Dmule.version=4.4.0'
+            bat 'mvn clean deploy -DmuleDeploy -DskipTests -Dmule.version=4.4.0 -Danypoint.username=japhetntantu4 -Danypoint.password=Ntantukava150819 -Denv=Sandbox -Dappname=secretmapp -Dbusiness=Cap4Lab -DvCore=Micro -Dworkers=1 -DaltDeploymentRepository=repository::default::file:///C:\Github_secreApp - CheckOut@tmp'
                 // 
-            }
+            } 
         }
     }
 }
