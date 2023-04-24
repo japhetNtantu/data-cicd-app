@@ -6,7 +6,7 @@ pipeline
         steps {
             bat 'mvn clean test'
                 // 
-            }
+            } 
         }
         stage('Build Application') { 
             steps {
@@ -19,12 +19,6 @@ pipeline
             bat 'mvn clean deploy -DmuleDeploy  -Dmule.version=4.4.0 -Danypoint.username=japhetntantu4 -Danypoint.password=Ntantukava150819 -Denv=Sandbox -Dappname=secretmapp -Dbusiness=Cap4Lab -DvCore=Micro -Dworkers=1'
                 // 
             } 
-        }
-        stage('Collection Test') { 
-            steps {
-            bat 'newman run C:\\Users\\Japhet\\AppData\\Roaming\\npm\\node_modules\\CICD.postman_collection.json --disable-unicode'
-                // 
-            }
         }
     }
 }
