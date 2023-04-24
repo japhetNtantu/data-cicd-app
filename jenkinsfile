@@ -2,7 +2,7 @@ pipeline
 {
     agent any 
     stages {
-        stage('Test Application') { 
+        stage('MunitTest Application') { 
         steps {
             bat 'mvn clean test'
                 // 
